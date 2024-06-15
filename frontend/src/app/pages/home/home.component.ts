@@ -19,5 +19,12 @@ export class HomeComponent {
   ];
   name = 'Juan';
   visibilidad = true;
-  img='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+  img =
+    'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
+
+    persona= {
+      nombre: 'Juan',
+      apellido: 'Perez',
+      edad: 25
+    }
 }
