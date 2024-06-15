@@ -30,4 +30,7 @@ export class HomeComponent {
     clickHandler(){
       alert('Clickeaste en el botón');
     }
+    dblClickHandler(){
+      alert('Doble clickeaste en el botón');
+    }
 }
