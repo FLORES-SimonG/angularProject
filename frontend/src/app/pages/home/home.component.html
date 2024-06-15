@@ -1,3 +1,13 @@
-<h1 class="text-3xl font-bold underline bg-red-500">
-  Hello world!
-</h1>
+
+
+
+<div>
+  <h1 class="bg-red-500 text-4xl font-bold">Este es el Home</h1>
+
+  <ul class="flex flex-col my-2 w-1/2 bg-green-400 gap-2">
+    <li *ngFor = "let tarea of tareas">
+      {{ tarea }}
+  </ul>
+
+  <h2>En esta sección puedo usar Javascript puro, ejemplo 'hola'.repeat ==> <strong>{{'Hola '.repeat(4)}}</strong> </h2>
+</div>

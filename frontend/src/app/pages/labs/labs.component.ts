@@ -15,10 +15,9 @@ import { Component } from '@angular/core';
 export class LabsComponent {
   title = 'Valor enlazado desde el componente AppComponent';
   tareas=[
-    "Estudiar Angular",
-    "Estudiar Testing en Angular",
-    "Estudiar Vue.js",
-    "Estudiar Testing en Vue.js",
-    "Estudiar NestJS"
+    "Estudiar Alemán",
+    "Estudiar Testing en Angular en Alemán",
+    "Estudiar Vue.js en Ingles",
+    "Estudiar Testing en Vue.js en Ingles",
   ]
 }
