@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -39,4 +39,9 @@ export class HomeComponent {
     keyDownHandler(event: any){
       console.log(event.target.value);
     }
+
+    //! Angular Signal:
+    //? Se ejecuta cuando el componente se inicializa
+
+    nacionalidad = signal('Argentina');
 }

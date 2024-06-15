@@ -92,7 +92,7 @@
       [value]="persona.edad"
       (change)="changeHandler($event)"
     />
-    <hr>
+    <hr />
     <h2>Changes con KEYDOWN</h2>
     <p>(keydown)</p>
     <input
@@ -101,6 +101,34 @@
       [value]="persona.nombre"
       (keydown)="keyDownHandler($event)"
     />
-    <p class="text-red-500 font-bold">La diferencia entre Change y keydown es que change hace efecto cuando hago desenfoque</p>
+    <p class="text-red-500 font-bold">
+      La diferencia entre Change y keydown es que change hace efecto cuando hago
+      desenfoque
+    </p>
   </div>
+</div>
+<div class="bg-green-300">
+  <h2 class="bg-red-500 font-bold text-3xl text-center m-2 p-3">
+    ANGULAR SIGNAL
+  </h2>
+  <p>
+    Angular tiene un sistema de señales que permite detectar cambios en las
+    variables
+  </p>
+  <p>
+    Para ello, se debe utilizar el signo de dolar y el nombre de la variable
+    entre corchetes
+  </p>
+  <p>
+    Esto es para cambios reales y online por ejemplo
+  </p>
+  <p>
+    Por ejemplo, si tengo una variable llamada "name", para detectar cambios en
+    ella, debo hacer lo siguiente:
+  </p>
+  <p>
+
+    <strong>1- nacionalidad ==></strong>
+    <strong>{{ nacionalidad() }}</strong>
+  </p>
 </div>
