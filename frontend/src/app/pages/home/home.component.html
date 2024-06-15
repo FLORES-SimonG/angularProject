@@ -1,13 +1,31 @@
-
-
-
 <div>
   <h1 class="bg-red-500 text-4xl font-bold">Este es el Home</h1>
 
   <ul class="flex flex-col my-2 w-1/2 bg-green-400 gap-2">
-    <li *ngFor = "let tarea of tareas">
+    <h2 class="bg-yellow-400 m-2">
+      Si pongo "private" en el TS, Angular no me permite acceder a la variable
+      desde el HTML
+    </h2>
+    <li *ngFor="let tarea of tareas">
       {{ tarea }}
+    </li>
   </ul>
 
-  <h2>En esta sección puedo usar Javascript puro, ejemplo 'hola'.repeat ==> <strong>{{'Hola '.repeat(4)}}</strong> </h2>
+  <h2>
+    En esta sección puedo usar Javascript puro, ejemplo 'hola'.repeat ==>
+    <strong>{{ "Hola ".repeat(4) }}</strong>
+  </h2>
+</div>
+<div>
+  <h2 class="text-2xl bg-indigo-400">Cambios de estado:</h2>
+  <div class="bg-gray-400 flex flex-col gap-5 m-5 p-10 justify-center">
+    <div class="flex flex-row gap-5">
+
+      <input class="rounded-xl p-2" type="text" [value]="name" />
+      <button class="bg-purple-500 rounded-md px-2 py-1" [disabled]="visibilidad">
+        Clickeame, amigo!
+      </button>
+    </div>
+    <img [src]="img" alt="example">
+  </div>
 </div>
