@@ -59,7 +59,9 @@
   </div>
   <div class="bg-yellow-300 my-3">
     <h2 class="text-2xl font-bold">MANEJO DE BINDING</h2>
-    <p>El binding es el manejo de eventos (manejar un click o doble click, etc)</p>
+    <p>
+      El binding es el manejo de eventos (manejar un click o doble click, etc)
+    </p>
     <p>
       Se utiliza los parentesis para manejar eventos, por ejemplo, si quiero
       manejar un click, debo hacer lo siguiente:
@@ -67,19 +69,28 @@
     <p>
       <strong>1- button (click)="metodo()"</strong>
     </p>
-    <p> Esta funcion se pone en el TS</p>
+    <p>Esta funcion se pone en el TS</p>
     <button class="bg-blue-500 p-2 rounded-md" (click)="clickHandler()">
       Clickeame
     </button>
-    <hr>
+    <hr />
     <p>Si quiero manejar un doble click, debo hacer lo siguiente:</p>
     <p>
       <strong>2- button (dblclick)="metodo()"</strong>
     </p>
-    <p> Esta funcion se pone en el TS</p>
+    <p>Esta funcion se pone en el TS</p>
     <button class="bg-blue-500 p-2 rounded-md" (dblclick)="dblClickHandler()">
       Doble Clickeame
     </button>
-
+  </div>
+  <div class="bg-green-500">
+    <h2>Changes con ChangeHandler</h2>
+    <p>(change)</p>
+    <input
+      class="p-2 rounded-md"
+      type="number"
+      [value]="persona.edad"
+      (change)="changeHandler($event)"
+    />
   </div>
 </div>

@@ -33,4 +33,7 @@ export class HomeComponent {
     dblClickHandler(){
       alert('Doble clickeaste en el botón');
     }
+    changeHandler(event: any){
+      alert(event.target.value);
+    }
 }
