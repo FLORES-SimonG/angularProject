@@ -92,5 +92,15 @@
       [value]="persona.edad"
       (change)="changeHandler($event)"
     />
+    <hr>
+    <h2>Changes con KEYDOWN</h2>
+    <p>(keydown)</p>
+    <input
+      class="p-2 rounded-md"
+      type="text"
+      [value]="persona.nombre"
+      (keydown)="keyDownHandler($event)"
+    />
+    <p class="text-red-500 font-bold">La diferencia entre Change y keydown es que change hace efecto cuando hago desenfoque</p>
   </div>
 </div>

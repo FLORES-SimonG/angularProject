@@ -36,4 +36,7 @@ export class HomeComponent {
     changeHandler(event: any){
       alert(event.target.value);
     }
+    keyDownHandler(event: any){
+      console.log(event.target.value);
+    }
 }
