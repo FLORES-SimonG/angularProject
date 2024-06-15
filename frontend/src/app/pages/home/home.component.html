@@ -20,30 +20,56 @@
   <h2 class="text-2xl bg-indigo-400">Cambios de estado:</h2>
   <div class="bg-gray-400 flex flex-col gap-5 m-5 p-10 justify-center">
     <div class="flex flex-row gap-5">
-
       <input class="rounded-xl p-2" type="text" [value]="name" />
-      <button class="bg-purple-500 rounded-md px-2 py-1" [disabled]="visibilidad">
+      <button
+        class="bg-purple-500 rounded-md px-2 py-1"
+        [disabled]="visibilidad"
+      >
         Clickeame, amigo!
       </button>
     </div>
-    <img [src]="img" alt="example">
+    <img [src]="img" alt="example" />
   </div>
 
-<div class="bg-orange-600">
-  <h2 class="bg-yellow-300 text-xl p-5 m-2">Explicación de cómo entrar a un objeto definido en el TS:</h2>
-  <p>Para acceder a un objeto definido en el TS, se debe hacer de la siguiente manera:</p>
-  <p>Por ejemplo, si tengo un objeto llamado "persona" en el TS, para acceder a sus propiedades, debo hacer lo siguiente, <strong>encerrado con doble llave:</strong></p>
-  <div class="flex flex-row gap-2">
-
-    <p>1- persona.nombre ==></p><strong>{{persona.nombre}}</strong>
+  <div class="bg-orange-600">
+    <h2 class="bg-yellow-300 text-xl p-5 m-2">
+      Explicación de cómo entrar a un objeto definido en el TS:
+    </h2>
+    <p>
+      Para acceder a un objeto definido en el TS, se debe hacer de la siguiente
+      manera:
+    </p>
+    <p>
+      Por ejemplo, si tengo un objeto llamado "persona" en el TS, para acceder a
+      sus propiedades, debo hacer lo siguiente,
+      <strong>encerrado con doble llave:</strong>
+    </p>
+    <div class="flex flex-row gap-2">
+      <p>1- persona.nombre ==></p>
+      <strong>{{ persona.nombre }}</strong>
+    </div>
+    <div class="flex flex-row gap-2">
+      <p>2- persona.apellido ==></p>
+      <strong>{{ persona.apellido }}</strong>
+    </div>
+    <div class="flex flex-row gap-2">
+      <p>3- persona.edad ==></p>
+      <strong>{{ persona.edad }}</strong>
+    </div>
   </div>
-  <div class="flex flex-row gap-2">
-    <p>2- persona.apellido ==></p><strong>{{persona.apellido}}</strong>
+  <div class="bg-yellow-300 my-3">
+    <h2 class="text-2xl font-bold">MANEJO DE BINDING</h2>
+    <p>El binding es el manejo de eventos (manejar un click o doble click, etc)</p>
+    <p>
+      Se utiliza los parentesis para manejar eventos, por ejemplo, si quiero
+      manejar un click, debo hacer lo siguiente:
+    </p>
+    <p>
+      <strong>1- button (click)="metodo()"</strong>
+    </p>
+    <p> Esta funcion se pone en el TS</p>
+    <button class="bg-blue-500 p-2 rounded-md" (click)="clickHandler()">
+      Clickeame
+    </button>
   </div>
-  <div class="flex flex-row gap-2">
-    <p>3- persona.edad ==></p><strong>{{persona.edad}}</strong>
-  </div>
-
-</div>
-
 </div>

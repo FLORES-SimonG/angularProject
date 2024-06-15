@@ -27,4 +27,7 @@ export class HomeComponent {
       apellido: 'Perez',
       edad: 25
     }
+    clickHandler(){
+      alert('Clickeaste en el botón');
+    }
 }
