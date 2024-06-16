@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -39,9 +40,25 @@ export class HomeComponent {
     keyDownHandler(event: any){
       console.log(event.target.value);
     }
+    colorCtrl = new FormControl();
 
     //! Angular Signal:
     //? Se ejecuta cuando el componente se inicializa
 
     nacionalidad = signal('Argentina');
+
+    tasks = signal([
+      'Dormir',
+      'Comer',
+      'Estudiar',
+      'Trabajar',
+      'Hacer ejercicio',
+    ]);
+
+
+    arrayDeObjetos = signal([
+      {nombre: 'Juan', apellido: 'Perez', edad: 25},
+      {nombre: 'Maria', apellido: 'Gomez', edad: 30},
+      {nombre: 'Carlos', apellido: 'Lopez', edad: 35},
+    ]);
 }
